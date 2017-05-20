@@ -131,7 +131,7 @@ for x in range(flagAmount):
 
 for x in range(flagAmount):
     passwords[x] = generatePassword(flagLength, whitelist, blacklist)
-    print("[i] Password %s: %s" % (x + 1, passwords[x]))
+    print("[#] Password %s: %s" % (x + 1, passwords[x]))
 
 ### Output to file
 if flagOutput is not None:
