@@ -18,7 +18,6 @@ specialCharacters = ["!", "\"", "$", "%", "&", "/", "(", ")", "=", "?", "{", "["
 specialCharactersAdvanced = ["^", "°", "§", "`", "´", "<", ">", "|"]
 
 # Functions
-
 def generatePassword(length, whitelist, blacklist):
     password = internalGeneratePassword(length, whitelist)
     while internalContainsBlacklist(password, blacklist):
@@ -28,7 +27,7 @@ def generatePassword(length, whitelist, blacklist):
 def internalGeneratePassword(length, whitelist):
     password = ""
     for x in range(length):
-        password += random.SystemRandom.choice(whitelist)
+        password += random.SystemRandom().choice(whitelist)
     return password
 
 def internalContainsBlacklist(password, blacklist):
