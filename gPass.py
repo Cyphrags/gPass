@@ -28,7 +28,7 @@ def generatePassword(length, whitelist, blacklist):
 def internalGeneratePassword(length, whitelist):
     password = ""
     for x in range(length):
-        password += random.choice(whitelist)
+        password += random.SystemRandom.choice(whitelist)
     return password
 
 def internalContainsBlacklist(password, blacklist):
