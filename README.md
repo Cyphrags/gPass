@@ -1,8 +1,8 @@
-###Generator: Password
+### Generator: Password
 
 A generator used to generate passwords (obviously).
 
-###Commandline arguments/parameters:
+### Commandline arguments/parameters:
 Copied from the commandline, using the '--help' parameter:
 
     -h, --help          show this help message and exit
@@ -33,14 +33,14 @@ Copied from the commandline, using the '--help' parameter:
     --sc=FLAGSC         Use special characters
     --sca=FLAGSCA       Use additional (generally not accepted) special characters
     
-###Applications
+### Applications
 If no arguments are given, gPass will generate a single password using upper- & lower-case letters, numbers and special characters with a length of 8 characters.
 
 Using the blacklist argument you can prevent certain words (racist or in other ways mean) from being generated (even though the chance for a word being generated using the default setup is about 0%).
 
 Disabling all predefined character collections and using the whitelist argument with a list of words (maybe from a dictionary), and maybe enabling numbers, you can create simple passwords that are somewhat safe and can still be remembered easily (even though I discourage the use of simple passwords). 
 
-###Generation speed
+### Generation speed
 I've quickly tested how fast a password can be generated. For this I've generated 8 passwords with a length of 256 characters (no, I don't know why anybody would need or could even correctly enter a 256 long password). 
  
     1.5 ms | 0.5 ms | 1.0 ms | 0.5 ms | 0.5 ms | 1.0 ms | 1.0 ms | 0.5 ms  
